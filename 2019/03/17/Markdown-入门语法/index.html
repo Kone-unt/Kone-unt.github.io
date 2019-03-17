@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <link rel="canonical" href="https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/">
+    
+    
+    <title>Markdown 入门语法 | 淋过最大的雨 | 烈日下的不回头</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Markdown">
+    <meta name="description" content="Markdown是个什么玩意？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。 说了一堆废话，反正就是能够用比较装逼的方式写文章拉，还有点小优雅~ 本文使用的编辑器叫Typora，有兴趣的可以前往官网下载，Typora官网">
+<meta name="keywords" content="Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 入门语法">
+<meta property="og:url" content="https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/index.html">
+<meta property="og:site_name" content="淋过最大的雨">
+<meta property="og:description" content="Markdown是个什么玩意？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。 说了一堆废话，反正就是能够用比较装逼的方式写文章拉，还有点小优雅~ 本文使用的编辑器叫Typora，有兴趣的可以前往官网下载，Typora官网">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://blog.konebtbx.com/images/kiss.jpg">
+<meta property="og:updated_time" content="2019-03-17T16:43:25.172Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown 入门语法">
+<meta name="twitter:description" content="Markdown是个什么玩意？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。 说了一堆废话，反正就是能够用比较装逼的方式写文章拉，还有点小优雅~ 本文使用的编辑器叫Typora，有兴趣的可以前往官网下载，Typora官网">
+<meta name="twitter:image" content="https://blog.konebtbx.com/images/kiss.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="淋过最大的雨" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Kone</h5>
+          <a href="mailto:kone74123@163.com" title="kone74123@163.com" class="mail">kone74123@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Kone-unt" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Markdown 入门语法</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Markdown 入门语法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-03-17T15:35:52.000Z" itemprop="datePublished" class="page-time">
+  2019-03-17
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Markdown是个什么玩意？"><span class="post-toc-number">1.</span> <span class="post-toc-text">Markdown是个什么玩意？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Cmd-Markdown-简明语法手册"><span class="post-toc-number">2.</span> <span class="post-toc-text">Cmd Markdown 简明语法手册</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-斜体和粗体"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.斜体和粗体</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-分级标题"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.分级标题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-超链接"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3.超链接</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-无序列表"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">4.无序列表</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-文字引用"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">5.文字引用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-行内代码块"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">6.行内代码块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-代码块"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">7.代码块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-插入图片"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">8.插入图片</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Markdown-入门语法" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Markdown 入门语法</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-17 23:35:52" datetime="2019-03-17T15:35:52.000Z" itemprop="datePublished">2019-03-17</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Markdown是个什么玩意？"><a href="#Markdown是个什么玩意？" class="headerlink" title="Markdown是个什么玩意？"></a>Markdown是个什么玩意？</h1><p>Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。</p>
+<p><em>说了一堆废话，反正就是能够用比较装逼的方式写文章拉，还有点小优雅~</em></p>
+<p>本文使用的编辑器叫<code>Typora</code>，有兴趣的可以前往官网下载，<a href="https://typora.io/" target="_blank" rel="noopener">Typora官网</a></p>
+<a id="more"></a>
+<h1 id="Cmd-Markdown-简明语法手册"><a href="#Cmd-Markdown-简明语法手册" class="headerlink" title="Cmd Markdown 简明语法手册"></a>Cmd Markdown 简明语法手册</h1><h2 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1.斜体和粗体"></a>1.斜体和粗体</h2><p>使用<code>*</code>和<code>**</code>表示斜体和粗体。</p>
+<p>例如：斜体的<em>SB</em>, 粗体的<strong>SB</strong></p>
+<p>快捷键：<code>ctrl+I</code>斜体，<code>ctrl+B</code>粗体</p>
+<h2 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2.分级标题"></a>2.分级标题</h2><p>在行首使用<code>#</code>的数量来表示不同级别的标题，例如# H1 ，## H2。</p>
+<p>快捷键：<code>ctrl+1</code>，<code>ctrl+2</code></p>
+<h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3.超链接"></a>3.超链接</h2><p>使用格式<code>[描述]（链接地址）</code>为文字增加超链接。</p>
+<p>例如：[百度](<a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a>)</p>
+<p>效果：<a href="www.baidu.com">百度</a></p>
+<h2 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4.无序列表"></a>4.无序列表</h2><p>使用<code>*，+，-</code>表示无序列表。</p>
+<p>例如：</p>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2 </li>
+<li>无序列表3</li>
+</ul>
+<h2 id="5-文字引用"><a href="#5-文字引用" class="headerlink" title="5.文字引用"></a>5.文字引用</h2><p>使用 <code>&gt;</code> 表示文字引用。</p>
+<p>例如：</p>
+<blockquote>
+<p>甘苦与共，是浮生茶，也是人生路</p>
+</blockquote>
+<h2 id="6-行内代码块"><a href="#6-行内代码块" class="headerlink" title="6.行内代码块"></a>6.行内代码块</h2><p>使用 `代码块` 表示行内代码块。</p>
+<p>例如：我在学<code>Markdown</code></p>
+<h2 id="7-代码块"><a href="#7-代码块" class="headerlink" title="7.代码块"></a>7.代码块</h2><p>行首使用<code>四个空格</code>来表示代码块。</p>
+<p>例如：</p>
+<pre><code>我是一个代码块，我的行首有4个空格。
+</code></pre><h2 id="8-插入图片"><a href="#8-插入图片" class="headerlink" title="8.插入图片"></a>8.插入图片</h2><p>使用![描述](图片链接地址)来插入图像。</p>
+<p>例如：![刺客五六七](/images/kiss.jpg)，效果如下：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/kiss.jpg" alt="刺客五六七" title>
+                </div>
+                <div class="image-caption">刺客五六七</div>
+            </figure>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-03-17T16:43:25.172Z" itemprop="dateUpdated">2019-03-18 00:43:25</time>
+</span><br>
+
+
+        
+        原始链接：<a href="/2019/03/17/Markdown-入门语法/" target="_blank" rel="external">https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://blog.konebtbx.com">
+            <img src="/img/avatar.jpg" alt="Kone">
+            Kone
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/&title=《Markdown 入门语法》 — 淋过最大的雨&pic=https://blog.konebtbx.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/&title=《Markdown 入门语法》 — 淋过最大的雨&source=Markdown是个什么玩意？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdow..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Markdown 入门语法》 — 淋过最大的雨&url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/&via=https://blog.konebtbx.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/16/hello-world/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "XOc7wkIdxFBbOSnniXVNd0is-gzGzoHsz",
+            appKey: "enJc9JgTNbO88tAmPh91560I",
+            avatar: "mm",
+            placeholder: "随便说点什么吧~",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢老板~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Kone &copy; 2019</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备18114805号-1</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/&title=《Markdown 入门语法》 — 淋过最大的雨&pic=https://blog.konebtbx.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/&title=《Markdown 入门语法》 — 淋过最大的雨&source=Markdown是个什么玩意？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdow..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Markdown 入门语法》 — 淋过最大的雨&url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/&via=https://blog.konebtbx.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3aQW7DMAwFUd//0i7QVQs3ynzSLWpqtDIcR9bLgiFFHQce5+e4Xn+9c33m+uT1U/6tG4YMGTIeyziXY730DnW9Er42GTJk7MMgQZaHSILk710/I0OGDBnkmofp9Y8iQ4YMGXcF3DQEr3nkUxkyZMjgRWwtKSSlbBrQZciQsRuj0xj47es/6m/IkCHjHzPOcPDZ+KZ/GmR/WJUMGTJGM3h7sl+OktZmWgAfvBchQ4aMEYy7tsN4mK61P9F2mwwZMgYx+KGHfkXZ2vRf42XIkDGawcNfGmRryWXtD0CGDBn7MNLEjjzPE8e7jpTJkCFjHoNvzfOkrbMsPtu3Z2TIkDGawYtV0mJMQ2q89U8qchkyZGzDOEsjDZdpM/XNnDJkyBjNSDe5+iljJ0GUIUPGngyStPXbnJ0UELUwZciQsQGj37bkBy9qTdBWhitDhoyHM+56JW9M8iWS+zJkyJjNSK2dBkCa9pF5XnZiZciQMYhROzbRie6dAJ0WwDJkyJjB4AGOL440A9L2QLFwlSFDxiAGmTrd6O+weYEtQ4aMHRhpFtlpZPKDFGkrVIYMGbMZZzj4stYLTQvdN3PKkCFjNIOPdFOsXxLz98qQIWMHBj82kR6YiLNUfjakdlpEhgwZD2fUGpn9ZaXl68s7MmTIkNHY9K/NmYZ7GTJkyOCMNFiTnwC9XYYMGRswSMjj99fJ3F2JZrEWlyFDxgMZtcZALWXsbP3XgrgMGTIezvgAOjX6CCSvnksAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

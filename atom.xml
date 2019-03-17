@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.konebtbx.com/"/>
-  <updated>2018-08-28T15:40:07.227Z</updated>
+  <updated>2019-03-17T16:43:25.172Z</updated>
   <id>https://blog.konebtbx.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown 入门语法</title>
+    <link href="https://blog.konebtbx.com/2019/03/17/Markdown-%E5%85%A5%E9%97%A8%E8%AF%AD%E6%B3%95/"/>
+    <id>https://blog.konebtbx.com/2019/03/17/Markdown-入门语法/</id>
+    <published>2019-03-17T15:35:52.000Z</published>
+    <updated>2019-03-17T16:43:25.172Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Markdown是个什么玩意？"><a href="#Markdown是个什么玩意？" class="headerlink" title="Markdown是个什么玩意？"></a>Markdown是个什么玩意？</h1><p>Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。</p><p><em>说了一堆废话，反正就是能够用比较装逼的方式写文章拉，还有点小优雅~</em></p><p>本文使用的编辑器叫<code>Typora</code>，有兴趣的可以前往官网下载，<a href="https://typora.io/" target="_blank" rel="noopener">Typora官网</a></p><a id="more"></a><h1 id="Cmd-Markdown-简明语法手册"><a href="#Cmd-Markdown-简明语法手册" class="headerlink" title="Cmd Markdown 简明语法手册"></a>Cmd Markdown 简明语法手册</h1><h2 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1.斜体和粗体"></a>1.斜体和粗体</h2><p>使用<code>*</code>和<code>**</code>表示斜体和粗体。</p><p>例如：斜体的<em>SB</em>, 粗体的<strong>SB</strong></p><p>快捷键：<code>ctrl+I</code>斜体，<code>ctrl+B</code>粗体</p><h2 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2.分级标题"></a>2.分级标题</h2><p>在行首使用<code>#</code>的数量来表示不同级别的标题，例如# H1 ，## H2。</p><p>快捷键：<code>ctrl+1</code>，<code>ctrl+2</code></p><h2 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3.超链接"></a>3.超链接</h2><p>使用格式<code>[描述]（链接地址）</code>为文字增加超链接。</p><p>例如：[百度](<a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a>)</p><p>效果：<a href="www.baidu.com">百度</a></p><h2 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4.无序列表"></a>4.无序列表</h2><p>使用<code>*，+，-</code>表示无序列表。</p><p>例如：</p><ul><li>无序列表1</li><li>无序列表2 </li><li>无序列表3</li></ul><h2 id="5-文字引用"><a href="#5-文字引用" class="headerlink" title="5.文字引用"></a>5.文字引用</h2><p>使用 <code>&gt;</code> 表示文字引用。</p><p>例如：</p><blockquote><p>甘苦与共，是浮生茶，也是人生路</p></blockquote><h2 id="6-行内代码块"><a href="#6-行内代码块" class="headerlink" title="6.行内代码块"></a>6.行内代码块</h2><p>使用 `代码块` 表示行内代码块。</p><p>例如：我在学<code>Markdown</code></p><h2 id="7-代码块"><a href="#7-代码块" class="headerlink" title="7.代码块"></a>7.代码块</h2><p>行首使用<code>四个空格</code>来表示代码块。</p><p>例如：</p><pre><code>我是一个代码块，我的行首有4个空格。</code></pre><h2 id="8-插入图片"><a href="#8-插入图片" class="headerlink" title="8.插入图片"></a>8.插入图片</h2><p>使用![描述](图片链接地址)来插入图像。</p><p>例如：![刺客五六七](/images/kiss.jpg)，效果如下：</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/kiss.jpg" alt="刺客五六七" title>                </div>                <div class="image-caption">刺客五六七</div>            </figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Markdown是个什么玩意？&quot;&gt;&lt;a href=&quot;#Markdown是个什么玩意？&quot; class=&quot;headerlink&quot; title=&quot;Markdown是个什么玩意？&quot;&gt;&lt;/a&gt;Markdown是个什么玩意？&lt;/h1&gt;&lt;p&gt;Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;说了一堆废话，反正就是能够用比较装逼的方式写文章拉，还有点小优雅~&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;本文使用的编辑器叫&lt;code&gt;Typora&lt;/code&gt;，有兴趣的可以前往官网下载，&lt;a href=&quot;https://typora.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Typora官网&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="https://blog.konebtbx.com/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -34,29 +56,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Cmd Markdown 语法手册</title>
-    <link href="https://blog.konebtbx.com/2018/08/31/Cmd%20Markdown%20%E7%AE%80%E6%98%8E%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/"/>
-    <id>https://blog.konebtbx.com/2018/08/31/Cmd Markdown 简明语法手册/</id>
-    <published>2018-08-31T03:20:00.000Z</published>
-    <updated>2018-08-31T03:39:57.192Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Markdown是什么？"><a href="#Markdown是什么？" class="headerlink" title="Markdown是什么？"></a>Markdown是什么？</h2><p>Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。</p><h1 id="Cmd-Markdown-简明语法"><a href="#Cmd-Markdown-简明语法" class="headerlink" title="Cmd Markdown 简明语法"></a>Cmd Markdown 简明语法</h1><h2 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1. 斜体和粗体"></a>1. 斜体和粗体</h2><p>使用 <code>*</code> 和 <code>**</code> 表示斜体和粗体<br><em>斜体</em> <strong>粗体</strong><br><code>ctrl+B</code></p><h2 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2. 分级标题"></a>2. 分级标题</h2><p>使用===和—表示一级和二级标题</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>也可以使用行首加<code>#</code>来表示不同级别的标题，如：# H1, ## H2</p><h3 id="3-外链接"><a href="#3-外链接" class="headerlink" title="3. 外链接"></a>3. 外链接</h3><p>使用[描述](链接地址)为文字添加外链接<br>这是去往<a href="http://google.com" target="_blank" rel="noopener">Google</a>的地址</p><h3 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4. 无序列表"></a>4. 无序列表</h3><p>使用*，+，-表示无序列表 （ <strong>注意：前后要有空行</strong> )</p><ul><li>无序列表一</li><li>无序列表二</li><li>无序列表三</li></ul><h3 id="5-有序列表"><a href="#5-有序列表" class="headerlink" title="5. 有序列表"></a>5. 有序列表</h3><p>使用数字加点表示有序列表</p><ol><li>有序列表一</li><li>有序列表二</li><li>有序列表三</li></ol><h3 id="6-文字的引用"><a href="#6-文字的引用" class="headerlink" title="6. 文字的引用"></a>6. 文字的引用</h3><p>使用&gt;表示文字的引用</p><blockquote><p>啦啦啦啦啦 </p></blockquote><h3 id="7-行内代码块"><a href="#7-行内代码块" class="headerlink" title="7. 行内代码块"></a>7. 行内代码块</h3><p>使用`代码`来表示行内代码块</p><p>比如： <code>html</code>，<code>css</code></p><h3 id="8-代码块"><a href="#8-代码块" class="headerlink" title="8. 代码块"></a>8. 代码块</h3><p>使用<strong>四个空格</strong>表示代码块</p><p>比如：</p><pre><code>这是代码块前面有四个空格</code></pre><h3 id="9-插入图片"><a href="#9-插入图片" class="headerlink" title="9. 插入图片"></a>9. 插入图片</h3><p>使用![描述](图片链接地址)插入图片</p><p>比如：</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/kiss.jpg" alt="我的头像" title>                </div>                <div class="image-caption">我的头像</div>            </figure><h1 id="Cmd-Markdown-高阶语法"><a href="#Cmd-Markdown-高阶语法" class="headerlink" title="Cmd Markdown 高阶语法"></a>Cmd Markdown 高阶语法</h1><h3 id="1-内容目录"><a href="#1-内容目录" class="headerlink" title="1.内容目录"></a>1.内容目录</h3><p>在段落中填写<code>[TOC]</code>以显示全文内容的目录结构。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Markdown是什么？&quot;&gt;&lt;a href=&quot;#Markdown是什么？&quot; class=&quot;headerlink&quot; title=&quot;Markdown是什么？&quot;&gt;&lt;/a&gt;Markdown是什么？&lt;/h2&gt;&lt;p&gt;Markdown是一种轻量级标记语言，它以纯文本形式(易读、
-      
-    
-    </summary>
-    
-    
-      <category term="Markdown学习" scheme="https://blog.konebtbx.com/tags/Markdown%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
