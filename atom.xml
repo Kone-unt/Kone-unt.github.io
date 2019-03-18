@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.konebtbx.com/"/>
-  <updated>2019-03-17T16:43:25.172Z</updated>
+  <updated>2019-03-18T06:40:03.888Z</updated>
   <id>https://blog.konebtbx.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown 高级语法</title>
+    <link href="https://blog.konebtbx.com/2019/03/18/Markdown-%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95/"/>
+    <id>https://blog.konebtbx.com/2019/03/18/Markdown-高级语法/</id>
+    <published>2019-03-18T05:50:15.000Z</published>
+    <updated>2019-03-18T06:40:03.888Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Cmd-Markdown-高级语法"><a href="#Cmd-Markdown-高级语法" class="headerlink" title="Cmd Markdown 高级语法"></a>Cmd Markdown 高级语法</h1><h2 id="1-内容目录"><a href="#1-内容目录" class="headerlink" title="1.内容目录"></a>1.内容目录</h2><p>在段落中填写<code>@[TOC]</code>来显示全文的内容目录结构。</p><p>@[TOC]</p><h2 id="2-删除线"><a href="#2-删除线" class="headerlink" title="2.删除线"></a>2.删除线</h2><p>使用<code>~~</code>表示删除线。</p><p>例如：这个商品原价<del>199</del>，现价9.9</p><h2 id="3-注脚"><a href="#3-注脚" class="headerlink" title="3.注脚"></a>3.注脚</h2><p>使用[^keyword]表示注脚。</p><p>例如：详情请见参考1[^footnote]</p><h2 id="4-LateX公式"><a href="#4-LateX公式" class="headerlink" title="4.LateX公式"></a>4.LateX公式</h2><p><code>$</code>表示行内的公式</p><p>例如：质能守恒方程的方程式为$E=mc^2​$。</p><p><code>$$</code>表示整行公式：</p><p>$$\sum_{i=1}^n a_i=0​$$</p><p>$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$</p><p>访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> 参考更多使用方法。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Cmd-Markdown-高级语法&quot;&gt;&lt;a href=&quot;#Cmd-Markdown-高级语法&quot; class=&quot;headerlink&quot; title=&quot;Cmd Markdown 高级语法&quot;&gt;&lt;/a&gt;Cmd Markdown 高级语法&lt;/h1&gt;&lt;h2 id=&quot;1-内容目
+      
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="https://blog.konebtbx.com/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown 入门语法</title>
