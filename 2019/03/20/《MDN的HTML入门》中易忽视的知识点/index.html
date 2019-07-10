@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    
+    
+    
+    <link rel="canonical" href="https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/">
+    
+    
+    <title>《MDN的HTML入门》中易忽视的知识点 | 淋过最大的雨 | 烈日下的不回头</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="HTML入门,阅读笔记">
+    <meta name="description" content="前言本人在阅读《MDN的HTML入门》时，觉得容易让人忽视的知识点，记录在这里，提醒自己注意，也方便以后回来查阅。  坚持，就是在坚持不下去的时候再坚持。  易忽视的知识点1. 空白字符在HTML中无论使用多少个空白（包括空白字符，换行），当HTML渲染的时候，解释器只会渲染一个空格符，以下两行渲染的结果是相同的。 12&amp;lt;p&amp;gt;在这里只有一个 空格&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;在">
+<meta name="keywords" content="HTML入门,阅读笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《MDN的HTML入门》中易忽视的知识点">
+<meta property="og:url" content="https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/index.html">
+<meta property="og:site_name" content="淋过最大的雨">
+<meta property="og:description" content="前言本人在阅读《MDN的HTML入门》时，觉得容易让人忽视的知识点，记录在这里，提醒自己注意，也方便以后回来查阅。  坚持，就是在坚持不下去的时候再坚持。  易忽视的知识点1. 空白字符在HTML中无论使用多少个空白（包括空白字符，换行），当HTML渲染的时候，解释器只会渲染一个空格符，以下两行渲染的结果是相同的。 12&amp;lt;p&amp;gt;在这里只有一个 空格&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;在">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-07-10T09:26:03.973Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《MDN的HTML入门》中易忽视的知识点">
+<meta name="twitter:description" content="前言本人在阅读《MDN的HTML入门》时，觉得容易让人忽视的知识点，记录在这里，提醒自己注意，也方便以后回来查阅。  坚持，就是在坚持不下去的时候再坚持。  易忽视的知识点1. 空白字符在HTML中无论使用多少个空白（包括空白字符，换行），当HTML渲染的时候，解释器只会渲染一个空格符，以下两行渲染的结果是相同的。 12&amp;lt;p&amp;gt;在这里只有一个 空格&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;在">
+    
+        <link rel="alternate" type="application/atom+xml" title="淋过最大的雨" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+
+</head>
+
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Kone</h5>
+          <a href="mailto:kone74123@163.com" title="kone74123@163.com" class="mail">kone74123@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Kone-unt" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">《MDN的HTML入门》中易忽视的知识点</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">《MDN的HTML入门》中易忽视的知识点</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-03-20T15:51:41.000Z" itemprop="datePublished" class="page-time">
+  2019-03-20
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#易忽视的知识点"><span class="post-toc-number">2.</span> <span class="post-toc-text">易忽视的知识点</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-空白字符"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1. 空白字符</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-字符引用"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2. 字符引用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-超链接至文档片段"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3. 超链接至文档片段</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-电子邮件链接"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">4. 电子邮件链接</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-上标和下标"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">5. 上标和下标</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-原生表单部件"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">6. 原生表单部件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-通用属性"><span class="post-toc-number">2.6.0.1.</span> <span class="post-toc-text">1.通用属性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-单行文本域"><span class="post-toc-number">2.6.0.2.</span> <span class="post-toc-text">2.单行文本域</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-下拉内容"><span class="post-toc-number">2.6.0.3.</span> <span class="post-toc-text">3.下拉内容</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#a-选择框"><span class="post-toc-number">2.6.0.3.1.</span> <span class="post-toc-text">a.选择框</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#b-多选选择框"><span class="post-toc-number">2.6.0.3.2.</span> <span class="post-toc-text">b.多选选择框</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-可选中项"><span class="post-toc-number">2.6.0.4.</span> <span class="post-toc-text">4.可选中项</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#a-复选框"><span class="post-toc-number">2.6.0.4.1.</span> <span class="post-toc-text">a.复选框</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#b-单选按钮"><span class="post-toc-number">2.6.0.4.2.</span> <span class="post-toc-text">b.单选按钮</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-表单数据校验"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">7.表单数据校验</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-内置表单数据验证"><span class="post-toc-number">2.7.0.1.</span> <span class="post-toc-text">1.内置表单数据验证</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#required属性"><span class="post-toc-number">2.7.0.1.1.</span> <span class="post-toc-text">required属性</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#使用正则表达式验证pattern"><span class="post-toc-number">2.7.0.1.2.</span> <span class="post-toc-text">使用正则表达式验证pattern</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-《MDN的HTML入门》中易忽视的知识点" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">《MDN的HTML入门》中易忽视的知识点</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-20 23:51:41" datetime="2019-03-20T15:51:41.000Z" itemprop="datePublished">2019-03-20</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本人在阅读<a href="https://developer.mozilla.org/zh-CN/docs/learn" target="_blank" rel="noopener">《MDN的HTML入门》</a>时，觉得容易让人忽视的知识点，记录在这里，提醒自己注意，也方便以后回来查阅。</p>
+<blockquote>
+<p>坚持，就是在坚持不下去的时候再坚持。</p>
+</blockquote>
+<h1 id="易忽视的知识点"><a href="#易忽视的知识点" class="headerlink" title="易忽视的知识点"></a>易忽视的知识点</h1><h2 id="1-空白字符"><a href="#1-空白字符" class="headerlink" title="1. 空白字符"></a>1. 空白字符</h2><p>在HTML中无论使用多少个空白（包括空白字符，换行），当HTML渲染的时候，解释器只会渲染<code>一个空格符</code>，以下两行渲染的结果是相同的。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>在这里只有一个 空格<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>在这里只有很多          空格<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  <span class="comment">&lt;!-- 要渲染出多个空格可使用&amp;nbsp; 或使用&lt;pre&gt; --&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-字符引用"><a href="#2-字符引用" class="headerlink" title="2. 字符引用"></a>2. 字符引用</h2><p>在HTML中，字符<code>&lt;</code>,<code>&gt;</code>,<code>&quot;</code>,<code>&#39;</code>和<code>&amp;</code>是特殊字符，是HTML语法本身的一部分，如果要在文本中使用这些特殊字符而不被浏览器视为代码并被解释，我们必须使用<code>字符引用——表示字符的特殊编码</code>。(注意下表中的字符引用均无空格，如&amp;和lt之间无空格，只是为了让浏览器不渲染成”&lt;”)</p>
+<table>
+<thead>
+<tr>
+<th>原义字符</th>
+<th>等价字符引用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;</td>
+<td>&amp; lt;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&amp; gt;</td>
+</tr>
+<tr>
+<td>“</td>
+<td>&amp; quot;</td>
+</tr>
+<tr>
+<td>‘</td>
+<td>&amp; apos;</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>&amp; amp;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>提示</strong>: 维基百科上有一个包含所有可用HTML字符实体引用的列表：<a href="http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" target="_blank" rel="noopener">XML和HTML字符实体引用列表</a>。</p>
+</blockquote>
+<h2 id="3-超链接至文档片段"><a href="#3-超链接至文档片段" class="headerlink" title="3. 超链接至文档片段"></a>3. 超链接至文档片段</h2><p>超链接可以链接到html文档的特定部分（被称为<strong>文档片段</strong>），而不仅仅是文件的顶部。要做到这一点你必须首先分配一个<code>id</code>属性的元素到链接。通常链接到一个特定的标题是有意义的，所以这看起来像下面的内容：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">"Mailing_address"</span>&gt;</span>Mailing address<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>然后链接到那个特定的<code>id</code>，您可以在URL的结尾包含它，前面是一个井号（#），例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    Want to write us a letter? Use our </span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"contacts.html#Mailing_address"</span>&gt;</span>mailing address<span class="tag">&lt;/<span class="name">a</span>&gt;</span>.</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>你甚至可以用它自己的文档片段参考链接到同一份文件的另一部分：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    The </span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#Mailing_address"</span>&gt;</span>company mailing  address<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    can be found at the bottom of this page.</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-电子邮件链接"><a href="#4-电子邮件链接" class="headerlink" title="4. 电子邮件链接"></a>4. 电子邮件链接</h2><p>当点击一个链接或按钮时，打开一个新的电子邮件发送信息而不是连接到一个资源或页面，这种情况是可能做到的。这样做是使用<code>a元素</code>和<code>mailto</code>：URL的方案。<br>其最基本和最常用的使用形式为一个<code>mailto</code>:link （链接），链接简单说明收件人的电子邮件地址。例如:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"mailto:nowhere@mozilla.org"</span>&gt;</span>Send email to nowhere<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-上标和下标"><a href="#5-上标和下标" class="headerlink" title="5. 上标和下标"></a>5. 上标和下标</h2><p>当你使用日期、化学方程式、和数学方程式时会偶尔使用上标和下标。 <code>sup</code>和<code>sub</code>元素可以解决这样的问题。例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>咖啡因的化学方程式是 C<span class="tag">&lt;<span class="name">sub</span>&gt;</span>8<span class="tag">&lt;/<span class="name">sub</span>&gt;</span>H<span class="tag">&lt;<span class="name">sub</span>&gt;</span>10<span class="tag">&lt;/<span class="name">sub</span>&gt;</span>N<span class="tag">&lt;<span class="name">sub</span>&gt;</span>4<span class="tag">&lt;/<span class="name">sub</span>&gt;</span>O<span class="tag">&lt;<span class="name">sub</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sub</span>&gt;</span>。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>如果 x<span class="tag">&lt;<span class="name">sup</span>&gt;</span>2<span class="tag">&lt;/<span class="name">sup</span>&gt;</span> 的值为 9，那么 x 的值必为 3 或 -3。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这些代码输出的结果是：</p>
+<p>咖啡因的化学方程式是C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。</p>
+<p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+<h2 id="6-原生表单部件"><a href="#6-原生表单部件" class="headerlink" title="6. 原生表单部件"></a>6. 原生表单部件</h2><h4 id="1-通用属性"><a href="#1-通用属性" class="headerlink" title="1.通用属性"></a>1.通用属性</h4><p>所有的表单元素都有一组属性，可以对表单小部件进行控制，下面是这些通用属性的列表：</p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autofocus</td>
+<td>(false)</td>
+<td>指定页面加载时元素应该自动具有输入焦点，文档中只有一个元素可以指定这个属性</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>(false)</td>
+<td>这个布尔属性表示用户不能与元素交互</td>
+</tr>
+<tr>
+<td>form</td>
+<td></td>
+<td>小部件与之相关联的表单元素，属性值必须是同一文档中<code>&lt;form&gt;</code>属性的<code>id</code>属性</td>
+</tr>
+<tr>
+<td>name</td>
+<td></td>
+<td>元素的名称，用于表单数据提交</td>
+</tr>
+<tr>
+<td>value</td>
+<td></td>
+<td>元素的初始值</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-单行文本域"><a href="#2-单行文本域" class="headerlink" title="2.单行文本域"></a>2.单行文本域</h4><p>使用<code>&lt;input&gt;</code>元素创建一个单行文本域，该元素的<code>type</code>属性值设置为<code>text</code>（默认值为<code>text</code>）。单行文本域只有一个真正的约束：<strong>如果您输入带有换行符的文本，浏览器在发送数据之前将删除这些换行符。</strong></p>
+<h4 id="3-下拉内容"><a href="#3-下拉内容" class="headerlink" title="3.下拉内容"></a>3.下拉内容</h4><h5 id="a-选择框"><a href="#a-选择框" class="headerlink" title="a.选择框"></a>a.选择框</h5><p>一个选择框使用<code>&lt;select&gt;</code>元素创建的。其中有一个或多个<code>&lt;option&gt;</code>元素作为子元素，每个元素都指定了其中一个可能的值。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"simple"</span> <span class="attr">name</span>=<span class="string">"simple"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>Banana<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>Cherry<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span>&gt;</span>Lemon<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>如果需要可以使用<code>selected</code>属性在所需的<code>option</code>上设置选择框的默认值，然后页面加载后将选择该选项。如果一个<code>option</code>元素设置了<code>value</code>属性，那么当提交表单时该属性的值就会被发送。如果忽略了<code>value</code>属性，则使用<code>option</code>元素的内容作为选择框的值。</p>
+<h5 id="b-多选选择框"><a href="#b-多选选择框" class="headerlink" title="b.多选选择框"></a>b.多选选择框</h5><p>默认情况下，选择框只允许用户选择一个值。通过将<code>multiple</code>属性添加到<code>select</code>元素，您可以允许用户通过操作系统提供的默认机制来选择几个值。 (如， 同时按下 Cmd/Ctrl 并点击多个值).</p>
+<p>注意：在多个选项选择框的情况下，选择框不再显示值为下拉内容——相反，它们都显示在一个列表中。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">multiple</span> <span class="attr">id</span>=<span class="string">"multi"</span> <span class="attr">name</span>=<span class="string">"multi"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>Banana<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>Cherry<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>Lemon<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-可选中项"><a href="#4-可选中项" class="headerlink" title="4.可选中项"></a>4.可选中项</h4><p>可选中项是状态可以通过单击它们来更改小部件。有两种可选中项：复选框和单选按钮。两者都使用<code>checked</code>属性，以指示该部件的默认状态: “选中”或”未选中”。</p>
+<p>值得注意的是，这些小部件与其他表单小部件不一样。对于大多数表单部件，一旦表单提交，所有具有<code>name</code>属性的小部件都会被发送，即使没有任何值被填。对于可选中项，只有在勾选时才发送它们的值。如果他们没有被勾选，就不会发送任何东西，甚至连他们的名字也没有。</p>
+<h5 id="a-复选框"><a href="#a-复选框" class="headerlink" title="a.复选框"></a>a.复选框</h5><p>使用<code>type</code>属性值为<code>checkbox</code>的<code>input</code>元素来创建一个复选框。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">checked</span> <span class="attr">id</span>=<span class="string">"carrots"</span> <span class="attr">name</span>=<span class="string">"carrots"</span> <span class="attr">value</span>=<span class="string">"carrots"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>包含<code>checked</code>属性使复选框在页面加载时自动被选中。</p>
+<h5 id="b-单选按钮"><a href="#b-单选按钮" class="headerlink" title="b.单选按钮"></a>b.单选按钮</h5><p>使用<code>type</code>属性值为<code>radio</code>的<code>input</code>元素来创建一个单选按钮。    </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">checked</span> <span class="attr">id</span>=<span class="string">"soup"</span> <span class="attr">name</span>=<span class="string">"meal"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>几个单选按钮可以连接在一起。如果它们的<code>name</code>属性共享相同的值，那么它们将被认为属于同一组的按钮。同一组中只有一个按钮可以同时被选；这意味着当其中一个被选中时，所有其他的都将自动未选中。如果没有选中任何一个，那么整个单选按钮池就被认为处于未知状态，并且没有以表单的形式发送任何值。</p>
+<h2 id="7-表单数据校验"><a href="#7-表单数据校验" class="headerlink" title="7.表单数据校验"></a>7.表单数据校验</h2><h4 id="1-内置表单数据验证"><a href="#1-内置表单数据验证" class="headerlink" title="1.内置表单数据验证"></a>1.内置表单数据验证</h4><p><code>HTML5</code>的新功能，不写一行脚本代码的情况下，对用户的输入进行数据校验，这是通过表单元素的<code>检验属性</code>实现的。</p>
+<p>当一个元素校验通过时：</p>
+<p>· 该元素可以通过CSS伪类<code>:valid</code>进行特殊的样式化；</p>
+<p>· 如果用户尝试提交表单，没有其他控制来阻止该操作（如JavaScript阻止提交），那么表单的数据将会被提交。</p>
+<p>当一个元素未校验通过时：</p>
+<p>· 该元素可以通过CSS伪类<code>:invalid</code>来进行样式化；</p>
+<p>· 如果用户尝试提交表单，浏览器会展示出错误消息，并停止表单的提交。</p>
+<h5 id="required属性"><a href="#required属性" class="headerlink" title="required属性"></a>required属性</h5><p>添加一个<code>required</code>属性到你的input元素中，使输入成为必须的，当设置此属性时，若输入为空，该表单将不会被提交，而现实错误消息。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"choose"</span>&gt;</span>Would you prefer a banana or cherry?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"choose"</span> <span class="attr">name</span>=<span class="string">"i_like"</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span>&gt;</span>Submit<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:invalid</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> dashed red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:valid</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="使用正则表达式验证pattern"><a href="#使用正则表达式验证pattern" class="headerlink" title="使用正则表达式验证pattern"></a>使用正则表达式验证<code>pattern</code></h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"choose"</span>&gt;</span>Would you prefer a banana or a cherry?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"choose"</span> <span class="attr">name</span>=<span class="string">"i_like"</span> <span class="attr">required</span> <span class="attr">pattern</span>=<span class="string">"banana|cherry"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span>&gt;</span>Submit<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-07-10T09:26:03.973Z" itemprop="dateUpdated">2019-07-10 17:26:03</time>
+</span><br>
+
+
+        
+        原始链接：<a href="/2019/03/20/《MDN的HTML入门》中易忽视的知识点/" target="_blank" rel="external">https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://blog.konebtbx.com">
+            <img src="/img/avatar.jpg" alt="Kone">
+            Kone
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML入门/">HTML入门</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/阅读笔记/">阅读笔记</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/&title=《《MDN的HTML入门》中易忽视的知识点》 — 淋过最大的雨&pic=https://blog.konebtbx.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/&title=《《MDN的HTML入门》中易忽视的知识点》 — 淋过最大的雨&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《《MDN的HTML入门》中易忽视的知识点》 — 淋过最大的雨&url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/&via=https://blog.konebtbx.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/18/从零开始搭建Hexo主题个人博客/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">从零开始搭建Hexo主题个人博客</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "XOc7wkIdxFBbOSnniXVNd0is-gzGzoHsz",
+            appKey: "enJc9JgTNbO88tAmPh91560I",
+            avatar: "mm",
+            placeholder: "随便说点什么吧~",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢老板~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Kone &copy; 2019</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备18114805号-1</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/&title=《《MDN的HTML入门》中易忽视的知识点》 — 淋过最大的雨&pic=https://blog.konebtbx.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/&title=《《MDN的HTML入门》中易忽视的知识点》 — 淋过最大的雨&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《《MDN的HTML入门》中易忽视的知识点》 — 淋过最大的雨&url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/&via=https://blog.konebtbx.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://blog.konebtbx.com/2019/03/20/《MDN的HTML入门》中易忽视的知识点/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3aQW7jQAwEwPz/09lrgI2dbnJG8KF0EhxFUo0BDk3y6ys+vn8cPz95df7/9e/v9uqa/PrVgYeHh7d49Vcvl3yePKW9Jn+fl2+Ch4eHd42XhOZZ4G6XIFnE5J3x8PDwPpOXf54wZgk9Hh4e3ufzkg0gCetJgWP2Dnh4eHjP8JJiRFuo3RR28yT+WK0FDw8PL+blXaTPOb/S38PDw8Nbd9XPNsOSKzebwS9vhYeHh3eB1zb13yevm+JCOzqQF3zx8PDwzvKSAN1uGAl4tkx5eo2Hh4f3DC9vOO3Dd7sc+UZS7GZ4eHh4I14+CjCrnW5S9vYLGE5G4OHh4Y14eaNrNla1GSloyxarPh4eHh5euSUkpYG2rLB/Vr6IeHh4eM/wkkJtG9bz/5otU5uU4+Hh4Z3lbcLuvlSRDGnlW84vS4yHh4f3OC+/UY5vN6HZyEKRxePh4eGVvH3zqS0otEs8W8o/fjHg4eHhrXl5l2yWXrel4XbRDwxg4eHh4cW8U8F9M4CVB/q6bIGHh4d3gTebz0qomxZae5/oO8TDw8M7xEtC9mwQapa4t8vxx2Lh4eHhXeadTXNnJdpTS4aHh4d3j5cH63w8a1+GyJevKJ3g4eHhHeLlw0yzYaycsWmAvbw/Hh4e3gVeXfEtQ/MsNf8Ojjz1x8PDw7vNa8/b4sVm22jvg4eHh/cMb1ZgbYN4e8/hTAQeHh7eZd4wYV1sM3nKPhvwwsPDw7vB+y6PvMD6/sGzway2zIGHh4d3gzcLvjeGCU6dH9hb8PDw8ALerJSQPCAJ7ps224HEGg8PD2/By8sK76/Zt81mm1b9Zzw8PLzHeXlJd5N8z5YVDw8P7zN5bel2Frdnowl4eHh4z/DapldbFJiVGzYNOTw8PLx7vFn4bh/8PhXebyerLh8eHh5eyvsHEhu7YKrKcesAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
+</body>
+</html>
